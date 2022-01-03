@@ -1,6 +1,7 @@
 const express=require('express');
 const app=express();
 const http=require('http');
+const dotenv = require('dotenv').config({path:'./.env'});
 const server=http.createServer(app);
 const socketIo=require('socket.io');
 const formatMessage=require('./utils/messages');
